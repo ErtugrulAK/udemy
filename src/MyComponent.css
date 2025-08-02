@@ -1,7 +1,17 @@
-h1 {
-  color: blue;
+.heading
+{
+    color: red;
 }
 
-p {
-  font-style: italic;
+
+ul
+{
+    color: blue;
+}
+
+
+.food
+{
+    height: 100px;
+    width: 100px;
 }
