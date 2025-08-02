@@ -1,43 +1,15 @@
 import React from "react";
 import "./MyComponent.css";
-
-const date = new Date ();
-const time = date.getHours();
-let sentence = "";
-let color = {
-  color: "",
-};
-
-
-if (time < 12) 
-{
-  sentence = "Good Morning";
-  color.color = "red";
-} 
-else if (time < 18) 
-{
-  sentence = "Good Afternoon";
-  color.color = "green";
-} 
-else 
-{
-  sentence = "Good Night";
-  color.color = "blue";
-}
+import Heading from "./heading";
+import Ul from "./ul";
 
 
 function MyComponent() {
   return (
-
-
-    
-
-
-
-    
-    <h1 style={color} className="heading" >{sentence}</h1>
-
-
+    <div>
+      <Heading />
+      <Ul />
+    </div>
 
 
 
