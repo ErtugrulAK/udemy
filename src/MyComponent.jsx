@@ -6,10 +6,9 @@ import Ul from "./ul";
 
 function MyComponent() {
   return (
-    <div>
-      <Heading />
-      <Ul />
-    </div>
+    
+
+    
 
 
 
