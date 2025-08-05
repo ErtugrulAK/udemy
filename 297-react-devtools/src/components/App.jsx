@@ -1,17 +1,11 @@
 import React from "react";
-import "./MyComponent.css";
 import Card from "./Card";
-import contacts from "./contacts";
-import Avatar from "./Avatar";
+import contacts from "../contacts";
 
-
-
-function MyComponent() {
-
+function App() {
   return (
     <div>
       <h1 className="heading">My Contacts</h1>
-      <Avatar img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwWw6bngnGFzneHCQEnQb06IiChyxXW18Csw&s" />
 
       <Card
         name={contacts[0].name}
@@ -35,5 +29,4 @@ function MyComponent() {
   );
 }
 
-export default MyComponent;
-
+export default App;

@@ -1,18 +1,13 @@
 import React from "react";
-import "./MyComponent.css";
 import Card from "./Card";
-import contacts from "./contacts";
+import contacts from "../contacts";
 import Avatar from "./Avatar";
 
-
-
-function MyComponent() {
-
+function App() {
   return (
     <div>
       <h1 className="heading">My Contacts</h1>
-      <Avatar img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwWw6bngnGFzneHCQEnQb06IiChyxXW18Csw&s" />
-
+      <Avatar img="https://pbs.twimg.com/profile_images/744849215675838464/IH0FNIXk.jpg" />
       <Card
         name={contacts[0].name}
         img={contacts[0].imgURL}
@@ -35,5 +30,4 @@ function MyComponent() {
   );
 }
 
-export default MyComponent;
-
+export default App;
