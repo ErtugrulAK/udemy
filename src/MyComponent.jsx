@@ -1,24 +1,24 @@
 import React from "react";
 import "./MyComponent.css";
-import Header from "./Header";
-import Footer from "./Footer";
-import Note from "./Note";
-import notes from "./notes";
+import Login from "./Login";
 
+
+
+
+
+var isLoggedIn = true;
+
+const currentTime = new Date().getHours();
+console.log(currentTime);
 
 
 function MyComponent() {
   return (
-    <div>
-      <Header />
-      {notes.map(x => (
-        <Note
-          key={x.key}
-          title={x.title}
-          content={x.content}
-        />
-      ))}
-      <Footer />
+    <div className="container">
+      {/*Ternary Operator*/}
+      {isLoggedIn ? <h1>Hello</h1> : <Login />}
+      
+      
     </div>
   );
 }
