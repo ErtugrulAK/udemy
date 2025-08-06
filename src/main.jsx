@@ -3,16 +3,65 @@ import { createRoot } from 'react-dom/client'
 import MyComponent from './MyComponent';
 
 
-//createRoot(document.getElementById('root')).render(
-//  <StrictMode>
-//    <MyComponent />
-//  </StrictMode>,
-//)
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <MyComponent />
+  </StrictMode>,
+)
 
-import emojipedia from "./emojipedia";
 
-const newEmojipedia = emojipedia.map(function (emojiEntry) {
-  return emojiEntry.meaning.substring(0, 100);
-});
 
-console.log(newEmojipedia);
+//import emojipedia from "./emojipedia";
+//
+//const newEmojipedia = emojipedia.map(function (emojiEntry) {
+//  return emojiEntry.meaning.substring(0, 100);
+//});
+//
+//console.log(newEmojipedia);
+
+
+
+//var numbers = [3, 56, 2, 48, 5];
+//const newNumbers = numbers.map(x => x * x);
+
+
+
+////Map -Create a new array by doing something with each item in an array.
+// const newNumbers = numbers.map(function (x) {
+//   return x * 2;
+// });
+//const newNumbers = numbers.map( x => x * 2);
+
+
+
+//////Filter - Create a new array by keeping the items that return true.
+// const newNumbers = numbers.filter(function(num) {
+//   return num < 10;
+// });
+//const newNumbers = numbers.filter(num => num < 10);
+
+
+//Reduce - Accumulate a value by doing something to each item in an array.
+// var newNumber = numbers.reduce(function (accumulator, currentNumber) {
+//     return accumulator + currentNumber;
+// })
+//const newNumber = numbers.reduce((accumulator, currentNumber) => accumulator + currentNumber);
+
+
+
+////Find - find the first item that matches from an array.
+// const newNumber = numbers.find(function (num) {
+//   return num > 10;
+// })
+// const newNumber = numbers.find(num => num > 10);
+
+
+
+////FindIndex - find the index of the first item that matches.
+// const newNumber = numbers.findIndex(function (num) {
+//   return num > 10;
+// })
+// const newNumber = numbers.findIndex(num => num > 10);
+
+
+//console.log(newNumbers);
