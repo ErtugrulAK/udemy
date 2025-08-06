@@ -1,24 +1,15 @@
 import React from "react";
 import "./MyComponent.css";
-import Login from "./Login";
+import Form from "./Form";
 
 
-
-
-
-var isLoggedIn = true;
-
-const currentTime = new Date().getHours();
-console.log(currentTime);
+var userIsRegistered = true;
 
 
 function MyComponent() {
   return (
     <div className="container">
-      {/*Ternary Operator*/}
-      {isLoggedIn ? <h1>Hello</h1> : <Login />}
-      
-      
+      <Form isRegistered={userIsRegistered} />
     </div>
   );
 }
