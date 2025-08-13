@@ -1,15 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "./MyComponent.css";
-import Form from "./Form";
-
-
-var userIsRegistered = true;
-
 
 function MyComponent() {
+  setInterval(latestTime, 10000);
+
+  const time = new Date().toLocaleTimeString();
+
+  const [newTime , setTime] = useState(time);
+
+  function latestTime() 
+  {
+    const timeLatest = new Date().toLocaleTimeString();
+    setTime(timeLatest);
+  }
   return (
     <div className="container">
-      <Form isRegistered={userIsRegistered} />
+      <h1>{time}</h1>
+      <button onClick={latestTime}>Get Time</button>
     </div>
   );
 }

@@ -1,15 +1,8 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import MyComponent from './MyComponent';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./components/App";
 
-
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <MyComponent />
-  </StrictMode>,
-)
-
-
+ReactDOM.render(<App />, document.getElementById("root"));
 
 //Challenge:
 //1. Given that you can get the current time using:
