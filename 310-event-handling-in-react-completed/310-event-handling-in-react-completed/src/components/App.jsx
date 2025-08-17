@@ -1,12 +1,9 @@
 import React, { useState } from "react";
-import "./MyComponent.css";
 
-
-
-function MyComponent() {
+function App() {
   const [headingText, setHeadingText] = useState("Hello");
   const [isMousedOver, setMouseOver] = useState(false);
-  
+
   function handleClick() {
     setHeadingText("Submitted");
   }
@@ -18,7 +15,7 @@ function MyComponent() {
   function handleMouseOut() {
     setMouseOver(false);
   }
-  
+
   return (
     <div className="container">
       <h1>{headingText}</h1>
@@ -32,8 +29,7 @@ function MyComponent() {
         Submit
       </button>
     </div>
-    
   );
 }
 
-export default MyComponent;
+export default App;
